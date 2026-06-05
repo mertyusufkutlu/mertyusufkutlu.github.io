@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mert Yusuf Kutlu — Resume (ATS)</title>
+  <style>
+    /* ── Base ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 14px;
+      color: #222;
+      background: #f0f0f0;
+      line-height: 1.5;
+    }
+
+    /* ── Page wrapper ─────────────────────────────────── */
+    .page {
+      max-width: 780px;
+      margin: 32px auto;
+      background: #fff;
+      padding: 48px 52px;
+      box-shadow: 0 2px 18px rgba(0,0,0,.12);
+    }
+
+    /* ── Header ───────────────────────────────────────── */
+    .header {
+      display: flex;
+      gap: 18px;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 28px;
+    }
+
+    .profile-photo {
+      width: 104px;
+      height: 104px;
+      object-fit: cover;
+      object-position: center 18%;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+
+    .header-main {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .header-main h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: .3px;
+      color: #111;
+    }
+
+    .header-main .title {
+      font-size: 14px;
+      color: #555;
+      margin-top: 3px;
+    }
+
+    .header-right {
+      text-align: right;
+      font-size: 13px;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    .header-right a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    .header-right a:hover { text-decoration: underline; }
+
+    /* ── Section ──────────────────────────────────────── */
+    .section { margin-bottom: 22px; }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: #333;
+      border-bottom: 1.5px solid #ccc;
+      padding-bottom: 4px;
+      margin-bottom: 14px;
+    }
+
+    /* ── Entry (experience, education) ───────────────── */
+    .entry { margin-bottom: 14px; }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .entry-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .entry-date {
+      font-size: 12.5px;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .entry-sub {
+      font-size: 13px;
+      color: #555;
+      margin-top: 1px;
+    }
+
+    .entry ul {
+      margin-top: 6px;
+      padding-left: 18px;
+    }
+
+    .entry ul li {
+      font-size: 13px;
+      color: #333;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+
+    /* ── Skills table ─────────────────────────────────── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px 24px;
+      font-size: 13px;
+    }
+
+    .skill-item {
+      color: #111;
+    }
+
+    /* ── Language ─────────────────────────────────────── */
+    .lang-row {
+      display: flex;
+      gap: 8px;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .lang-name { color: #111; font-weight: 500; }
+    .lang-level { color: #777; }
+
+    /* ── Nav bar (screen only) ────────────────────────── */
+    .cv-lang-bar {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      z-index: 50;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .cv-lang-bar a {
+      font-size: 12px;
+      padding: 4px 10px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: #444;
+      text-decoration: none;
+    }
+
+    .cv-lang-bar a.active { background: #333; color: #fff; border-color: #333; }
+    .cv-lang-bar a:hover:not(.active) { background: #f5f5f5; }
+    .cv-lang-bar span { color: #ccc; font-size: 12px; }
+
+    /* ── Print — tek A4 sayfa ─────────────────────────── */
+    @media print {
+      .cv-lang-bar { display: none !important; }
+
+      @page { size: A4 portrait; margin: 5mm 8mm; }
+
+      html {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      body {
+        background: none;
+        font-size: 12px;
+      }
+
+      .page {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      .header { margin-bottom: 8px; gap: 11px; }
+
+      .profile-photo {
+        width: 84px;
+        height: 84px;
+      }
+
+      .header-main h1 { font-size: 21px; }
+      .header-main .title { font-size: 13px; }
+      .header-right { font-size: 12px; line-height: 1.48; }
+
+      .section { margin-bottom: 8px; }
+      .section > p {
+        font-size: 12px !important;
+        line-height: 1.42 !important;
+      }
+      .section-title {
+        margin-bottom: 6px;
+        padding-bottom: 3px;
+        font-size: 11px;
+      }
+
+      .entry { margin-bottom: 5px; }
+      .entry-title { font-size: 12.5px; }
+      .entry-date { font-size: 11.5px; }
+      .entry-sub {
+        font-size: 11px !important;
+        margin-top: 3px !important;
+      }
+      .entry ul { margin-top: 3px; padding-left: 16px; }
+      .entry ul li {
+        font-size: 11.5px;
+        margin-bottom: 2px;
+        line-height: 1.36;
+      }
+
+      /* 3 sütun = 16 skill 6 satır, 2 sütundan 2 satır kazanç */
+      .skills-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 11px;
+        gap: 3px 12px;
+      }
+
+      .lang-row {
+        display: inline-block;
+        font-size: 11.5px;
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Language / View switcher -->
+  <nav class="cv-lang-bar">
+    <a href="index-ats-en.html" class="active">EN</a>
+    <a href="index-ats-tr.html">TR</a>
+    <span>|</span>
+    <a href="index-en.html">Classic</a>
+    <a href="resume-modern-en.html">Modern</a>
+    <a href="index-ats-en.html" class="active">ATS</a>
+  </nav>
+
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <img class="profile-photo" src="assets/images/1698912635458.jpg" alt="Mert Yusuf Kutlu">
+      <div class="header-main">
+        <h1>Mert Yusuf Kutlu</h1>
+        <p class="title">Backend Software Developer</p>
+      </div>
+      <div class="header-right">
+        <div>mertyusufkutlu@gmail.com</div>
+        <div>+90 533 652 87 97</div>
+        <div><a href="https://linkedin.com/in/mert-yusuf-kutlu-8b31ba142" target="_blank">linkedin.com/in/mert-yusuf-kutlu-8b31ba142</a></div>
+        <div><a href="https://github.com/mertyusufkutlu" target="_blank">github.com/mertyusufkutlu</a></div>
+      </div>
+    </header>
+
+    <!-- SUMMARY -->
+    <section class="section">
+      <h2 class="section-title">Summary</h2>
+      <p style="font-size:13px;color:#333;line-height:1.6;">
+        Backend Software Developer with 5+ years of experience, passionate about building scalable and efficient
+        microservice solutions with .NET. Specialized in enterprise backend architecture, event-driven platforms,
+        e-invoice integrations, and AI-assisted pipelines. I value continuous improvement, stay current with new
+        technologies, and strive to deliver high-quality, production-ready results.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Backend Developer — Sayax Energy Technologies</span>
+          <span class="entry-date">Sep 2025 – Present</span>
+        </div>
+        <ul>
+          <li>Developed backend services for an event-driven .NET 10 energy management platform serving enterprise clients.</li>
+          <li>Designed and delivered end-to-end e-invoice hub integrations, validation flows, and invoice lifecycle automations.</li>
+          <li>Built centralized logging infrastructure and contributed to AI-powered invoice processing backend architecture.</li>
+          <li>Developed a forecasting microservice from scratch enabling organizations to proactively predict future energy expenditures.</li>
+        </ul>
+        <p class="entry-sub" style="margin-top:5px;">Technologies: .NET 10, Microservices, RabbitMQ, PostgreSQL, Redis</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Backend Developer — Bimser</span>
+          <span class="entry-date">Nov 2023 – Feb 2025</span>
+        </div>
+        <ul>
+          <li>Developed workflow and form features for CSP, a low-code enterprise platform.</li>
+          <li>Redesigned BEAM and QDMS+ projects using the ABP Framework on .NET Core 7–8 with microservice architecture.</li>
+        </ul>
+        <p class="entry-sub" style="margin-top:5px;">Technologies: .NET Core 7–8, Microservices, ABP Framework, Elasticsearch, gRPC</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Backend Developer — Guven Future &amp; OneDose Health</span>
+          <span class="entry-date">Mar 2023 – Aug 2023</span>
+        </div>
+        <ul>
+          <li>Built appointment management, patient tracking, and backend services for AI-powered health app Mentaskop.</li>
+        </ul>
+        <p class="entry-sub" style="margin-top:5px;">Technologies: .NET Core 6+, PostgreSQL, Keycloak</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Fullstack Developer — AR Software LTD.</span>
+          <span class="entry-date">Jul 2022 – Mar 2023</span>
+        </div>
+        <ul>
+          <li>Delivered inventory management, personnel information systems, and LMS/HR portals for a government institution.</li>
+        </ul>
+        <p class="entry-sub" style="margin-top:5px;">Technologies: .NET Core 6, CQRS / MediatR, Vue 2+</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Backend &amp; Full-Stack Developer — Hızlı Geliyo</span>
+          <span class="entry-date">Dec 2021 – Mar 2023</span>
+        </div>
+        <ul>
+          <li>Developed microservice-based e-commerce platform with backend and Angular frontend for CRM and Merchant admin panels.</li>
+        </ul>
+        <p class="entry-sub" style="margin-top:5px;">Technologies: .NET Core 5+, Kubernetes, Angular, MongoDB</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Student &amp; Trainee — BilgeAdam Technologies</span>
+          <span class="entry-date">Sep 2020 – Apr 2021</span>
+        </div>
+        <p class="entry-sub" style="margin-top:4px;">Technologies: C#, .NET, MSSQL</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">IT Support Specialist — Ministry of Health</span>
+          <span class="entry-date">2018 · 1 year</span>
+        </div>
+        <ul>
+          <li>Provided IT support and server configuration for the Ministry of Health via subcontractor Pusula Call Center.</li>
+          <li>Contributed to small-scale C# and ASP.NET development alongside infrastructure work.</li>
+        </ul>
+        <p class="entry-sub" style="margin-top:5px;">Technologies: Server Configuration, C#, ASP.NET</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Web Developer Intern — Ortadogu Grup Reklam</span>
+          <span class="entry-date">2017 · 4 months</span>
+        </div>
+        <p class="entry-sub" style="margin-top:4px;">Technologies: C#, ASP.NET MVC, MSSQL, HTML / CSS</p>
+      </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Anadolu University</span>
+          <span class="entry-date">2019 – Present</span>
+        </div>
+        <p class="entry-sub">Bachelor's — Management Information Systems</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Ufuk University</span>
+          <span class="entry-date">2015 – 2017</span>
+        </div>
+        <p class="entry-sub">Associate's — Computer Programming (GPA 3.2 / 4.0)</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">C# / .NET 10</div>
+        <div class="skill-item">Microservices</div>
+        <div class="skill-item">ABP Framework</div>
+        <div class="skill-item">Entity Framework Core</div>
+        <div class="skill-item">CQRS / MediatR</div>
+        <div class="skill-item">PostgreSQL</div>
+        <div class="skill-item">MSSQL</div>
+        <div class="skill-item">Redis</div>
+        <div class="skill-item">RabbitMQ</div>
+        <div class="skill-item">Elasticsearch</div>
+        <div class="skill-item">Docker / Kubernetes</div>
+        <div class="skill-item">Azure / Azure DevOps</div>
+        <div class="skill-item">gRPC</div>
+        <div class="skill-item">OpenTelemetry</div>
+        <div class="skill-item">Keycloak</div>
+        <div class="skill-item">Dapper</div>
+      </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="section">
+      <h2 class="section-title">Languages</h2>
+      <div class="lang-row"><span class="lang-name">Turkish</span><span> </span> <span> </span><span class="lang-level">Native</span></div>
+      <div class="lang-row"><span class="lang-name">English</span> <span> </span><span> </span> <span class="lang-level">Fluent</span></div>
+    </section>
+
+  </div>
+</body>
+</html>

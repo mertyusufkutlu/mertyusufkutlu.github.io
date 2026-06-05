@@ -13,7 +13,6 @@
     <link rel="shortcut icon" href="assets/images/dev.png">
 
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Google Font -->
@@ -24,11 +23,21 @@
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
+    <link rel="stylesheet" href="styles.css">
 
 
 </head>
 
 <body>
+
+<div class="cv-lang-bar">
+    <a href="index.html" class="active">EN</a>
+    <a href="index-tr.html">TR</a>
+    <span class="cv-lang-bar__sep">|</span>
+    <a href="index.html" class="active">Classic</a>
+    <a href="resume-modern.html">Modern</a>
+    <a href="index-ats-en.html">ATS</a>
+</div>
 
 <!-- DEMO ONLY -->
 <article class="resume-wrapper text-center position-relative">
@@ -39,13 +48,13 @@
                 <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
                     <div class="primary-info">
                         <h1 class="name mt-0 mb-1 text-white">Mert Yusuf Kutlu</h1>
-                        <div class="title mb-3 mt-4">Backend Software Developer</div>
+                        <div class="title mb-3 mt-4 text-white">Backend Software Developer</div>
                         <ul class="list-unstyled">
                             <li class="mb-2">
                                 <a href="mailto:mertyusufkutlu@gmail.com">
-                            <span class="fa-container text-center mr-2">
-                                <i class="far fa-envelope fa-fw mr-2 mt-3" data-fa-transform="grow-10"></i>
-                            </span>
+                                    <span class="fa-container text-center">
+                                        <i class="far fa-envelope fa-fw"></i>
+                                    </span>
                                     mertyusufkutlu@gmail.com
                                 </a>
                             </li>
@@ -92,9 +101,9 @@
         </header>
         <div class="resume-body p-5">
             <section class="resume-section summary-section mb-5">
-                <h2 class="resume-section-title  font-weight-bold pb-3 mb-3">Career Summary</h2>
+                <h2 class="resume-section-title summary-print-hide font-weight-bold pb-3 mb-3">Career Summary</h2>
                 <div class="resume-section-content mt-5">
-                    <p style="font-size: 17px" class="mb-0 lg-8 text-body">• I am a Backend Software Developer passionate about building scalable and efficient solutions. I value continuous improvement, stay updated with new technologies, and strive to deliver high-quality results.</div>
+                    <p style="font-size: 17px" class="mb-0 lg-8 text-body">• Backend Software Developer with 5+ years of experience, passionate about building scalable and efficient microservice solutions with .NET. Specialized in enterprise backend architecture, event-driven platforms, e-invoice integrations, and AI-assisted pipelines. I value continuous improvement, stay current with new technologies, and strive to deliver high-quality, production-ready results.</div>
             </section><!--//summary-section-->
             <div class="row mt-1" >
                 <div class="col-sm-8">
@@ -104,6 +113,28 @@
                         <div class="resume-section-content">
                             <div class="resume-timeline position-relative">
 
+                                <article class="resume-timeline-item position-relative pb-5">
+
+                                    <div class="resume-timeline-item-header mb-2">
+                                        <div class="d-flex flex-column flex-md-row">
+                                            <h3 class="resume-position-title resume-company-name font-weight-bold mb-1">Sayax Energy Technologies</h3>
+                                            <div class="pill-gradient ml-auto badge-primary badge-pill text-white">
+                                                Backend Developer
+                                            </div>
+                                        </div><!--//row-->
+                                        <div class="resume-position-time">Sep 2025 - Present (10 months)</div>
+                                    </div><!--//resume-timeline-item-header-->
+                                    <div class="resume-timeline-item-desc">
+                                        <p style="font-size: 17px">• Developed backend services on an event-driven .NET 10 energy management platform serving enterprise clients. Designed end-to-end e-invoice hub integrations, validation flows, and invoice lifecycle automations; built centralized logging infrastructure and contributed to AI-powered invoice processing. Developed a forecasting microservice for proactive energy expenditure prediction.</p>
+                                        <h4 class="resume-timeline-item-desc-heading job-tech-heading font-weight-bold">Technologies used:</h4>
+                                        <ul class="list-inline job-tech-list">
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ .NET 10, Microservices</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ RabbitMQ</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ PostgreSQL, Redis</span></li>
+                                        </ul>
+                                    </div><!--//resume-timeline-item-desc-->
+                                    <div class="resume-section-title"></div>
+                                </article>
 
                                 <article class="resume-timeline-item position-relative pb-5">
 
@@ -117,25 +148,16 @@
                                         <div class="resume-position-time">Nov 2023 - Feb 2025 (1 years 4 months)</div>
                                     </div><!--//resume-timeline-item-header-->
                                     <div class="resume-timeline-item-desc">
-                                        <p style="font-size: 17px">• Worked as a Backend Developer at Bimser, where I developed workflow and form (low-code platform)
-                                            features in CSP and performed backend development by redesigning the BEAM and QDMS+ projects using the ABP Framework.</p>
-                                        <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪.Net Core 7 - 8+ , Microservice</span></li>
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ MSSQL, SqlKata, Linq, Akka Actor System, Dapper </span>
-                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ Open Telemetry, Elasticsearch, REDIS</span>
-                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ ABP Framework, Heimdall, Unit Test</span>
-                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ EF Core, gRPC, Quartz, K6 Load Test</span>
-                                            </li>
+                                        <p style="font-size: 17px">• Developed workflow and form features for CSP, a low-code enterprise platform. Redesigned BEAM and QDMS+ projects using the ABP Framework on .NET Core 7–8 with microservice architecture.</p>
+                                        <h4 class="resume-timeline-item-desc-heading job-tech-heading font-weight-bold">Technologies used:</h4>
+                                        <ul class="list-inline job-tech-list">
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ .NET Core 7–8, Microservices</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ ABP Framework</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ Elasticsearch, gRPC</span></li>
                                         </ul>
                                     </div><!--//resume-timeline-item-desc-->
                                     <div class="resume-section-title"></div>
                                 </article>
-
-                                <br/>
-                                <br/>
-                                <br/>
 
                                 <article class="resume-timeline-item position-relative pb-5">
 
@@ -149,28 +171,17 @@
                                         <div class="resume-position-time">Mar 2023 - Aug 2023 August (6 months)</div>
                                     </div><!--//resume-timeline-item-header-->
                                     <div class="resume-timeline-item-desc">
-                                        <p style="font-size: 17px">• I worked as a Backend Developer at Güven Future and OneDose Health, focusing on appointment management,
-                                            patient tracking, and taking part in all backend development of the AI-powered app 'Mentaskop.'</p>
-                                        <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
+                                        <p style="font-size: 17px">• Built appointment management, patient tracking, and backend services for the AI-powered health app Mentaskop.</p>
+                                        <h4 class="resume-timeline-item-desc-heading job-tech-heading font-weight-bold">Technologies
                                             used:</h4>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪.Net Core 6+</span>
-                                            </li>
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ MSSQL, PostgreSQL, Elasticsearch, REDIS</span>
-                                            </li>
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ KeyCloak, Twilio, SendGrid, Firebase</span>
-                                            </li>
+                                        <ul class="list-inline job-tech-list">
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ .NET Core 6+</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ PostgreSQL</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ Keycloak</span></li>
                                         </ul>
                                     </div><!--//resume-timeline-item-desc-->
                                     <div class="resume-section-title"></div>
                                 </article>
-
-                                <br/>
-                                <br/>
-                                <br/>
 
                                 <article class="resume-timeline-item position-relative pb-5">
 
@@ -185,35 +196,17 @@
                                         <div class="resume-position-time">Jul 2022 - Mar 2023 (9 months)</div>
                                     </div><!--//resume-timeline-item-header-->
                                     <div class="resume-timeline-item-desc">
-                                        <p style="font-size: 17px">• I worked as a FullStack Developer at a government institution, developing inventory management systems,
-                                            personnel information solutions, and management panels such as LMS (Learning Management Systems) and HR (Human Resources)
-                                            portals.</p>
-                                        <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
+                                        <p style="font-size: 17px">• Delivered inventory management, personnel information systems, and LMS/HR portals for a government institution.</p>
+                                        <h4 class="resume-timeline-item-desc-heading job-tech-heading font-weight-bold">Technologies
                                             used:</h4>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ C# .NET Core 6</span>
-                                            </li>
-
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ CQRS Pattern MediatR, Onion Architecture</span>
-                                            </li>
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ MSSQL, PostgreSQL</span>
-                                            </li>
-
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ Vue 2 +, Vuetify</span>
-                                            </li>
+                                        <ul class="list-inline job-tech-list">
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ .NET Core 6</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ CQRS / MediatR</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ Vue 2+</span></li>
                                         </ul>
                                     </div><!--//resume-timeline-item-desc-->
                                     <div class="resume-section-title"></div>
                                 </article>
-
-                                <br/>
-                                <br/>
-                                <br/>
-                                <br/>
 
                                 <article class="resume-timeline-item position-relative pb-5">
 
@@ -224,58 +217,21 @@
                                                 Backend & Full-Stack Developer
                                             </div>
                                         </div><!--//row-->
-                                        <div class="resume-position-time">Dec 2021 - Jul 2022 (5 months)</div>
-                                        <div class="resume-position-time">Jul 2022 - Mar 2023 (9 months)</div>
+                                        <div class="resume-position-time">Dec 2021 - Mar 2023 (15 months)</div>
                                     </div><!--//resume-timeline-item-header-->
                                     <div class="resume-timeline-item-desc">
-                                        <p style="font-size: 17px">• I worked as a Full-Stack Developer at Hızlı Geliyo, focusing on an E-commerce product built on a
-                                            microservice architecture. My role included backend and Angular-based frontend development for admin panels like CRM and
-                                            Merchant.</p>
-                                        <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
+                                        <p style="font-size: 17px">• Developed microservice-based e-commerce platform with backend and Angular frontend for CRM and Merchant admin panels.</p>
+                                        <h4 class="resume-timeline-item-desc-heading job-tech-heading font-weight-bold">Technologies
                                             used:</h4>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ C# .Net Core 5 +</span>
-                                            </li>
-
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ MicroServices</span>
-                                            </li>
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ Ocelot Gateways</span>
-                                            </li>
-
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ Kibana</span>
-                                            </li>
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ Kubernetes</span>
-                                            </li>
-
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primaryl">▪ LINQ, Dapper, Entity Framework</span>
-                                            </li>
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ Angular, CSS,HTML, Bootstrap, JS</span>
-                                            </li>
-
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ MSSQL, ElasticSearch, MongoDB</span>
-                                            </li>
-
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ Azure Storage, Azure DevOps, Azure ServiceBus</span>
-                                            </li>
-
-                                            <li class="list-inline-item"><span
-                                                    class="badge badge-primary badge-primary">▪ API Services (Restful etc...)</span>
-                                            </li>
+                                        <ul class="list-inline job-tech-list">
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ .NET Core 5+</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ Kubernetes</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ Angular</span></li>
+                                            <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ MongoDB</span></li>
                                         </ul>
                                     </div><!--//resume-timeline-item-desc-->
-
                                     <div class="resume-section-title"></div>
-
-                                    <br/>
+                                </article>
 
                                     <article class="resume-timeline-item position-relative pb-5">
 
@@ -290,38 +246,16 @@
                                             <div class="resume-position-time">Sep 2020 - Apr 2021 (8 months)</div>
                                         </div><!--//resume-timeline-item-header-->
                                         <div class="resume-timeline-item-desc">
-                                            <p style="font-size: 17px">• I completed the "Software Developer Program" at Bilge Adam Technology, a Microsoft-authorized training
-                                                center, gaining foundational software development knowledge and experience with real-life projects.</p>
-                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
+                                            <h4 class="resume-timeline-item-desc-heading job-tech-heading font-weight-bold">Technologies
                                                 used:</h4>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item"><span
-                                                        class="badge badge-primary badge-primary">▪ C#</span>
-                                                </li>
-
-                                                <li class="list-inline-item"><span
-                                                        class="badge badge-primary badge-primary">▪ Html, CSS, Bootstrap, Javascript,</span>
-                                                </li>
-                                                <li class="list-inline-item"><span
-                                                        class="badge badge-primary badge-primary">▪ MSSQL, PostgreSQL, MongoDB</span>
-                                                </li>
-                                                <li class="list-inline-item"><span
-                                                        class="badge badge-primary badge-primary">▪ Entity Framework, ADO.NET</span>
-                                                </li>
-
-                                                <li class="list-inline-item"><span
-                                                        class="badge badge-primary badge-primary">▪ API Services (Restful etc...),</span>
-                                                </li>
-
-                                                <li class="list-inline-item"><span
-                                                        class="badge badge-primary badge-primary">▪ .NET Framework MVC, .NET Core 5+</span>
-                                                </li>
+                                            <ul class="list-inline job-tech-list">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ C#</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ .NET</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ MSSQL</span></li>
                                             </ul>
                                         </div><!--//resume-timeline-item-desc-->
                                         <div class="resume-section-title"></div>
                                     </article><!--//resume-timeline-item-->
-
-                                    <br/>
 
                                     <article class="resume-timeline-item position-relative pb-5">
 
@@ -336,25 +270,21 @@
                                             <div class="resume-position-time">2018 - 2018 (1 Years)</div>
                                         </div><!--//resume-timeline-item-header-->
                                         <div class="resume-timeline-item-desc">
-                                            <p style="font-size: 17px">• I worked for a subcontractor company (Pusula Call Center) which is working
-                                                for the Ministry of Health.</p>
-                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
+                                            <p style="font-size: 17px">• Worked at subcontractor Pusula Call Center supporting the Ministry of Health with IT support and server configuration; also contributed to small-scale C# and ASP.NET development.</p>
+                                            <h4 class="resume-timeline-item-desc-heading job-tech-heading font-weight-bold">Technologies
                                                 used:</h4>
-                                            <ul class="list-inline">
+                                            <ul class="list-inline job-tech-list">
                                                 <li class="list-inline-item"><span
                                                         class="badge badge-primary badge-primary">▪ Server Configuration</span>
                                                 </li>
-
                                                 <li class="list-inline-item"><span
-                                                        class="badge badge-primary badge-primary">▪ HTML5, CSS3</span></li>
+                                                        class="badge badge-primary badge-primary">▪ C#</span></li>
                                                 <li class="list-inline-item"><span
                                                         class="badge badge-primary badge-primary">▪ ASP.NET, MVC5</span></li>
                                             </ul>
                                         </div><!--//resume-timeline-item-desc-->
                                         <div class="resume-section-title"></div>
                                     </article><!--//resume-timeline-item-->
-
-                                    <br/>
 
                                     <article class="resume-timeline-item position-relative">
 
@@ -369,19 +299,13 @@
                                             <div class="resume-position-time">2017 - 2017 (4 months)</div>
                                         </div><!--//resume-timeline-item-header-->
                                         <div class="resume-timeline-item-desc">
-                                            <p style="font-size: 17px">• I worked 4 months at Ortadogu Group Reklam Inc as Software Developer
-                                                intern.</p>
-                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
+                                            <h4 class="resume-timeline-item-desc-heading job-tech-heading font-weight-bold">Technologies
                                                 used:</h4>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item"><span
-                                                        class="badge badge-primary">▪ C#</span></li>
-
-                                                <li class="list-inline-item"><span
-                                                        class="badge badge-primary badge-primary">▪ MSSQL</span></li>
-
-                                                <li class="list-inline-item"><span
-                                                        class="badge badge-primary badge-primary">▪ HTML5, CSS3</span></li>
+                                            <ul class="list-inline job-tech-list">
+                                                <li class="list-inline-item"><span class="badge badge-primary">▪ C#</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ ASP.NET MVC</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ MSSQL</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-primary">▪ HTML / CSS</span></li>
                                             </ul>
                                         </div><!--//resume-timeline-item-desc-->
                                     </article><!--//resume-timeline-item-->
@@ -392,88 +316,70 @@
                 </div>
                 <div class="col-sm-4">
                     <section class="resume-section skills-section mb-5">
-                        <div class="resume-section-content">
-                            <div class="resume-skill-item">
-                                <ul class="list-unstyled mb-4">
-                                    <ul class="mb-2">
-                                        <h6 class="resume-section-title font-weight-bold pb-3 mb-0 text-md-right	">
-                                            Backend Technologies </h6>
-                                        <div style="font-size: 14px; text-align: right;">
-                                            ▪ C# <img src="https://cdn.cdnlogo.com/logos/c/27/c.svg" height="35px"/><br/><br/>
-                                            ▪ .NET Core <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1024px-.NET_Core_Logo.svg.png"
-                                                             height="30px"/><br/><br/>
-                                            ▪ MicroServices <img src="https://static.thenounproject.com/png/2324129-200.png" height="30px"/><br/><br/>
-                                            ▪ Entity Framework <img src="https://static.gunnarpeipman.com/wp-content/uploads/2019/12/ef-core-featured.png" height="30px"/><br/><br/>
-                                            ▪ ABP Framework <img src="https://cdn.worldvectorlogo.com/logos/abp-framework.svg" height="30"/><br/><br/>
-                                            ▪ Dapper <img src="https://api.nuget.org/v3-flatcontainer/dapper/2.0.123/icon" height="30"/><br/><br/>
-                                            ▪ CQRS MediatR <img src="https://api.nuget.org/v3-flatcontainer/mediatr.extensions.autofac.dependencyinjection/8.1.0/icon"
-                                                                height="30px"/><br/><br/>
-                                            ▪ Azure Storage, AzureDevOps <img
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/2048px-Microsoft_Azure.svg.png"
-                                                height="30px"/><br/><br/>
-                                            ▪ Ocelot,API Gateways <img
-                                                src="https://www.gencayyildiz.com/blog/wp-content/uploads/2020/07/NET-Core-Microservices-Ocelot-API-Gateway.png"
-                                                height="30px"/><br/><br/>
-                                            ▪ Azure ServiceBus <img src="https://symbols.getvecta.com/stencil_27/76_service-bus.97bf6436f8.jpg" height="30px"/><br/><br/>
-                                            ▪ RabbitMQ <img src="https://cdn.freebiesupply.com/logos/large/2x/rabbitmq-logo-png-transparent.png" height="35px"/><br/><br/>
-                                            ▪ ADO.NET <img src="https://i0.wp.com/www.phanxuanchanh.com/wp-content/uploads/2021/08/adonet.png?fit=454%2C340&ssl=1"
-                                                           height="30px"/><br/><br/>
-                                            ▪ ImageMagick <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Imagemagick-logo.png/1200px-Imagemagick-logo.png"
-                                                               height="30px"/><br/><br/>
-                                            ▪ Auth0 <img src="https://cdn.freebiesupply.com/logos/large/2x/auth0-logo-png-transparent.png" height="25px"/><br/><br/>
-                                            ▪ Quartz.NET <img src="https://avatars.githubusercontent.com/u/685655?s=280&v=4" height="25px"/><br/><br/>
-                                            ▪ Keycloak <img src="https://www.mshowto.org/images/articles/2022/01/Keycloak.png" height="35px"/><br/><br/>
-                                            ▪ OpenTelemetry <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf8G-Fq64ighqF2GMGVmOo0hDmdI1KUEzz9A&s"
-                                                                 height="30px"/><br/><br/>
-                                            ▪ Sql Kata <img src="https://sqlkata.com/img/sqlkata.png" height="45px"/><br/><br/>
-                                            ▪ Akka.Net <img src="https://getakka.net/images/mainlogo.png" height="25px"/><br/><br/>
-                                            ▪ K6 Grafana Load Test <img
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/K6-load-testing-tool-logo.svg/2105px-K6-load-testing-tool-logo.svg.png"
-                                                height="25px"/><br/><br/><br/><br/><br/><br/>
+                        <div class="resume-section-content skills-list text-md-right">
+                            <div class="skills-group">
+                                <h6 class="resume-section-title font-weight-bold pb-3 mb-2">Backend Technologies</h6>
+                                <div class="skill-line"><span class="skill-name">▪ C#</span><span class="skill-icons"><img src="https://cdn.cdnlogo.com/logos/c/27/c.svg" alt="C#"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ .NET Core</span><span class="skill-icons"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt=".NET Core"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ MicroServices</span><span class="skill-icons"><img src="https://static.thenounproject.com/png/2324129-200.png" alt="MicroServices"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Entity Framework</span><span class="skill-icons"><img src="https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/8.0.0/icon" alt="Entity Framework"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ ABP Framework</span><span class="skill-icons"><img src="https://cdn.worldvectorlogo.com/logos/abp-framework.svg" alt="ABP Framework"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Dapper</span><span class="skill-icons"><img src="https://api.nuget.org/v3-flatcontainer/dapper/2.0.123/icon" alt="Dapper"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ CQRS MediatR</span><span class="skill-icons"><img src="https://api.nuget.org/v3-flatcontainer/mediatr.extensions.autofac.dependencyinjection/8.1.0/icon" alt="CQRS MediatR"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Azure Storage, AzureDevOps</span><span class="skill-icons"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-original.svg" alt="Azure DevOps"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Ocelot, API Gateways</span><span class="skill-icons"><img src="https://www.gencayyildiz.com/blog/wp-content/uploads/2020/07/NET-Core-Microservices-Ocelot-API-Gateway.png" alt="Ocelot"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Azure ServiceBus</span><span class="skill-icons"><img src="https://symbols.getvecta.com/stencil_27/76_service-bus.97bf6436f8.jpg" alt="Azure ServiceBus"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ RabbitMQ</span><span class="skill-icons"><img src="https://cdn.freebiesupply.com/logos/large/2x/rabbitmq-logo-png-transparent.png" alt="RabbitMQ"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ ADO.NET</span><span class="skill-icons"><img src="https://i0.wp.com/www.phanxuanchanh.com/wp-content/uploads/2021/08/adonet.png?fit=454%2C340&ssl=1" alt="ADO.NET"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ ImageMagick</span><span class="skill-icons"><img src="https://www.vectorlogo.zone/logos/imagemagick/imagemagick-icon.svg" alt="ImageMagick"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Auth0</span><span class="skill-icons"><img src="https://cdn.freebiesupply.com/logos/large/2x/auth0-logo-png-transparent.png" alt="Auth0"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Quartz.NET</span><span class="skill-icons"><img src="https://avatars.githubusercontent.com/u/685655?s=280&v=4" alt="Quartz.NET"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Keycloak</span><span class="skill-icons"><img src="https://www.mshowto.org/images/articles/2022/01/Keycloak.png" alt="Keycloak"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ OpenTelemetry</span><span class="skill-icons"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf8G-Fq64ighqF2GMGVmOo0hDmdI1KUEzz9A&s" alt="OpenTelemetry"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Sql Kata</span><span class="skill-icons"><img src="https://sqlkata.com/img/sqlkata.png" alt="Sql Kata"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Akka.Net</span><span class="skill-icons"><img src="https://getakka.net/images/mainlogo.png" alt="Akka.Net"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ K6 Grafana Load Test</span><span class="skill-icons"><img src="https://cdn.simpleicons.org/k6/7D64FF" alt="K6"/></span></div>
+                            </div>
 
-                                            <h6 class="resume-section-title font-weight-bold pb-3 mb-0">Database Technologies</h6>
-                                            ▪ MSSQL <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" height="40px"/><br/><br/>
-                                            ▪ PostgreSQL <img
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png"
-                                                height="25px"/><br/><br/>
-                                            ▪ MongoDB <img src="https://www.svgrepo.com/show/331488/mongodb.svg" height="25px"/><br/><br/>
-                                            ▪ Elastic Search <img src="https://cdn.worldvectorlogo.com/logos/elasticsearch.svg" height="25px"/><br/><br/>
-                                            ▪ Redis <img src="https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-512.png" height="25px"/><br/><br/>
-                                            ▪ FireBase <img src="https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png" height="30px"/><br/><br/>
+                            <div class="skills-group">
+                                <h6 class="resume-section-title font-weight-bold pb-3 mb-2">Database Technologies</h6>
+                                <div class="skill-line"><span class="skill-name">▪ MSSQL</span><span class="skill-icons"><img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="MSSQL"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ PostgreSQL</span><span class="skill-icons"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ MongoDB</span><span class="skill-icons"><img src="https://www.svgrepo.com/show/331488/mongodb.svg" alt="MongoDB"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Elastic Search</span><span class="skill-icons"><img src="https://cdn.worldvectorlogo.com/logos/elasticsearch.svg" alt="Elastic Search"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Redis</span><span class="skill-icons"><img src="https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-512.png" alt="Redis"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ FireBase</span><span class="skill-icons"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" alt="Firebase"/></span></div>
+                            </div>
 
-                                            <h6 class="resume-section-title font-weight-bold pb-3 mb-0">Frontend Technologies</h6>
-                                            ▪ HTML5, CSS3 <img
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg/2560px-CSS3_and_HTML5_logos_and_wordmarks.svg.png"
-                                                height="30px"/><br/><br/>
-                                            ▪ Boostrap <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png"
-                                                            height="30px"/><br/><br/>
-                                            ▪ Angular 11+ <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" height="30px"/><br/><br/>
-                                            ▪ Vue 2+, Vuetify <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo.svg.png"
-                                                                   height="35px"/><br/><br/>
-                                            ▪ JavaScript <img
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
-                                                height="30px"/><br/><br/>
+                            <div class="skills-group">
+                                <h6 class="resume-section-title font-weight-bold pb-3 mb-2">Frontend Technologies</h6>
+                                <div class="skill-line"><span class="skill-name">▪ HTML5, CSS3</span><span class="skill-icons"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Boostrap</span><span class="skill-icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png" alt="Bootstrap"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Angular 11+</span><span class="skill-icons"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Angular"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Vue 2+, Vuetify</span><span class="skill-icons"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt="Vue.js"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ JavaScript</span><span class="skill-icons"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"/></span></div>
+                            </div>
 
-                                            <h6 class="resume-section-title font-weight-bold pb-3 mb-0">Version Control System</h6>
-                                            ▪ Git <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
-                                                       height="30px"/><br/><br/>
+                            <div class="skills-group">
+                                <h6 class="resume-section-title font-weight-bold pb-3 mb-2">Version Control System</h6>
+                                <div class="skill-line"><span class="skill-name">▪ Git</span><span class="skill-icons"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"/></span></div>
+                            </div>
 
-                                            <h6 class="resume-section-title font-weight-bold pb-3 mb-0">Other Tools</h6>
-                                            ▪ API Doc Tool <img src="https://nordicapis.com/wp-content/uploads/logo_light_bg.png" height="30px"/><br/><br/>
-                                            ▪ Postman <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" height="30px"/><br/><br/>
-                                            ▪ Kali Linux <img src="https://seeklogo.com/images/K/kali-linux-logo-0EB0B3A81B-seeklogo.com.png" height="30px"/><br/><br/>
-                                            ▪ Linux OS <img src="https://freesvg.org/img/Pinguino-Linux.png" height="35px"/><br/><br/>
-                                            ▪ Linux Sunucu (Apache, Mariadb) <img src="https://seeklogo.com/images/M/mariadb-logo-7C3403B5FA-seeklogo.com.png"
-                                                                                  height="30px"/><br/><br/>
-                                            ▪ Windows Sunucuları <img src="https://cdn.worldvectorlogo.com/logos/windows-server-2.svg" height="30px"/><br/><br/>
-                                            ▪ Unity (Hyper Casual Oyun) <img
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/2560px-Unity_Technologies_logo.svg.png"
-                                                height="20px"/><br/><br/>
-                                        </div><!--resume-section-content-->
-                                    </ul>
+                            <div class="skills-group">
+                                <h6 class="resume-section-title font-weight-bold pb-3 mb-2">Other Tools</h6>
+                                <div class="skill-line"><span class="skill-name">▪ API Doc Tool</span><span class="skill-icons"><img src="https://nordicapis.com/wp-content/uploads/logo_light_bg.png" alt="API Doc Tool"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Postman</span><span class="skill-icons"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Kali Linux</span><span class="skill-icons"><img src="https://www.kali.org/images/kali-dragon-icon.svg" alt="Kali Linux"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Linux OS</span><span class="skill-icons"><img src="https://freesvg.org/img/Pinguino-Linux.png" alt="Linux"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Linux Sunucu (Apache, Mariadb)</span><span class="skill-icons"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg" alt="Apache"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" alt="MariaDB"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Windows Sunucuları</span><span class="skill-icons"><img src="https://cdn.worldvectorlogo.com/logos/windows-server-2.svg" alt="Windows Server"/></span></div>
+                                <div class="skill-line"><span class="skill-name">▪ Unity (Hyper Casual Game)</span><span class="skill-icons"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" alt="Unity"/></span></div>
+                            </div>
+                        </div>
                     </section><!--//skills-section-->
                     <section class="resume-section education-section mb-5 text-md-right">
-                        <h2 class="resume-section-title  font-weight-bold pb-3 mb-3">Education</h2>
+                        <h2 class="resume-section-title edu-lang-print-title font-weight-bold pb-3 mb-3">Education &amp; Language</h2>
+                        <h2 class="resume-section-title edu-screen-title font-weight-bold pb-3 mb-3">Education</h2>
                         <div class="resume-section-content">
                             <ul class="list-unstyled">
                                 <li class="mb-2">
@@ -496,8 +402,8 @@
                             </ul>
                         </div>
                     </section><!--//education-section-->
-                    <section class="text-md-right">
-                        <h2 class="resume-section-title  font-weight-bold pb-3 mb-3">Language</h2>
+                    <section class="resume-section language-section text-md-right">
+                        <h2 class="resume-section-title lang-screen-title font-weight-bold pb-3 mb-3">Language</h2>
                         <div class="resume-section-content">
                             <ul class="list-unstyled resume-lang-list">
                                 <li class="mb-2"><span class="resume-lang-name">English</span> <small
@@ -550,19 +456,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 
 
-<style>
-    @media print {
-        body {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        .page {
-            page-break-before: always;
-        }
-    }
-</style>
 </body>
 </html>
 
